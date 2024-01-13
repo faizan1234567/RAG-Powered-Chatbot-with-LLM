@@ -1,7 +1,7 @@
 # RAG-Powered-Chatbot-with-LLM
 Pretrained LLM stores factual information in their parameters and, when fine-tuned, provides state-of-the-art performance on downstream tasks. However, their ability to access and provide domain-specific and current knowledge is still limited. To address this, ```Retrieval augmented generation``` (RAG) has been proposed. ```RAG``` uses non-parametric memory to provide additional context to the LLM. It converts the user query to embedding and by using similarity search algorithms it returns ```top K``` best retreived results based on the query. This additional context along with the query is added to the LLM prompt for up-to-date response generation ```[1]```. The following figure shows the RAG working:
 
-![alt text](https://github.com/faizan1234567/RAG-Powered-Chatbot-with-LLM/images/RAG_architecture.png)
+![alt text](https://github.com/faizan1234567/RAG-Powered-Chatbot-with-LLM/blob/main/images/RAG_architecture.png)
 
 ## Installation
 1. Clone the github repository
