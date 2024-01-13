@@ -3,6 +3,8 @@ Pretrained LLM stores factual information in their parameters and, when fine-tun
 
 ![alt text](https://github.com/faizan1234567/RAG-Powered-Chatbot-with-LLM/blob/main/images/RAG_architecture.png)
 
+Image by ```[3]```
+
 ## Installation
 1. Clone the github repository
 ```bash
@@ -28,3 +30,5 @@ if you face any issue in installation, please create an issue.
 [1]. Lewis, Patrick, et al. "Retrieval-augmented generation for knowledge-intensive nlp tasks." Advances in Neural Information Processing Systems 33 (2020): 9459-9474.
 
 [2]. D’Agostino, A. (2023, November 30). Create a chatbot in python with Langchain and rag. Medium. https://medium.com/mlearning-ai/create-a-chatbot-in-python-with-langchain-and-rag-85bfba8c62d2 
+
+[3]. Thakur, P. (2023b, August 26). A gentle introduction to retrieval augmented generation (RAG). W&B. https://wandb.ai/cosmo3769/RAG/reports/A-Gentle-Introduction-to-Retrieval-Augmented-Generation-RAG---Vmlldzo1MjM4Mjk1 
