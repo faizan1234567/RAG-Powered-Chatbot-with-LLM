@@ -1,0 +1,7 @@
+RAG/
+papers/
+*.pt
+*.pth
+*.csv
+*.pdf
+*.docx
