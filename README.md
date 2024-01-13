@@ -9,7 +9,7 @@ cd RAG-Powered-Chatbot-with-LLM
 ```
 2. create and activate an enviroment using anaconda
 ```bash
-conda create -n rag python=3.9.0 -y
+conda create -n rag python=3.10.0 -y
 conda activate rag
 conda list
 
