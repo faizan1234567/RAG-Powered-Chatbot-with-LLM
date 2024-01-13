@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+torch
+scipy
+langchain
+faiss-cpu
+openai
+tiktoken
+InstructorEmbedding
+sentence-transformers
+streamlit
+python-dotenv
+trafilatura
