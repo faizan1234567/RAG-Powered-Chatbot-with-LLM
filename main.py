@@ -2,6 +2,12 @@ import pandas as pd
 import os
 from langchain_community.document_loaders import DataFrameLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.vectorstores import faiss
+from langchain_openai import OpenAIEmbeddings
+
+from dotenv import load_dotenv
+#initailize
+load_dotenv()
 
 def load_data(file_name: str = "text_data.csv"):
     """
@@ -55,6 +61,33 @@ def chunk_dataset(dataset: pd.DataFrame, chunk_size: int = 1000, chunk_overlap: 
     return chunks
     
 
+def create_or_retreive_store(chunks: list):
+    """
+    create a embeddings and store them using FAISS
+    create an embedding of each document chunk
+
+    Parameters
+    ----------
+    chunks: list of docs chunks
+
+    Return
+    ------
+    FAISS: vector store
+    """
+    embeddings = OpenAIEmbeddings()
+    if not os.path.exists("/db"):
+        print('Creating embeddings')
+        vectorstore = faiss.from_documents(
+            chunks, embeddings
+        )
+        vectorstore.save_local("./db")
+    else:
+        print("Loading DB")
+        vectorstore = faiss.load_local("/db", embeddings)
+    return vectorstore
+
+
+
 
 
 
@@ -65,4 +98,5 @@ if __name__ == "__main__":
     df = load_data("text_data.csv")
     text_chunks = chunk_dataset(df)
     # test a chunk
-    print(text_chunks[74])
+    # print(text_chunks[74])
+    vectorstore = create_or_retreive_store(text_chunks)
