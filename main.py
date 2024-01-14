@@ -80,15 +80,11 @@ def create_or_retreive_store(chunks: list):
         vectorstore = FAISS.from_documents(
             chunks, embeddings
         )
-        vectorstore.save_local("./db")
+        vectorstore.save_local("/db")
     else:
         print("Loading DB")
         vectorstore = FAISS.load_local("/db", embeddings)
     return vectorstore
-
-
-
-
 
 
 
