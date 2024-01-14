@@ -7,3 +7,4 @@ papers/
 *.csv
 *.pdf
 *.docx
+*.env

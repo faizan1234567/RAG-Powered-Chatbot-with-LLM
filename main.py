@@ -2,7 +2,7 @@ import pandas as pd
 import os
 from langchain_community.document_loaders import DataFrameLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import faiss
+from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
 
 from dotenv import load_dotenv
@@ -77,13 +77,13 @@ def create_or_retreive_store(chunks: list):
     embeddings = OpenAIEmbeddings()
     if not os.path.exists("/db"):
         print('Creating embeddings')
-        vectorstore = faiss.from_documents(
+        vectorstore = FAISS.from_documents(
             chunks, embeddings
         )
         vectorstore.save_local("./db")
     else:
         print("Loading DB")
-        vectorstore = faiss.load_local("/db", embeddings)
+        vectorstore = FAISS.load_local("/db", embeddings)
     return vectorstore
 
 
