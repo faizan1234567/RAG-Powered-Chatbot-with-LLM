@@ -3,8 +3,7 @@ import os
 from langchain_community.document_loaders import DataFrameLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_openai import OpenAIEmbeddings
-
+from langchain_community.embeddings import OpenAIEmbeddings, SelfHostedHuggingFaceEmbeddings, HuggingFaceInstructEmbeddings
 from dotenv import load_dotenv
 #initailize
 load_dotenv()
@@ -74,8 +73,8 @@ def create_or_retreive_store(chunks: list):
     ------
     FAISS: vector store
     """
-    embeddings = OpenAIEmbeddings()
-    # embeddings = HuggingFaceInstructEmbeddings() 
+    # embeddings = OpenAIEmbeddings()
+    embeddings = HuggingFaceInstructEmbeddings() 
     if not os.path.exists("/db"):
         print('Creating embeddings')
         vectorstore = FAISS.from_documents(
@@ -92,7 +91,6 @@ def create_or_retreive_store(chunks: list):
 
 
 if __name__ == "__main__":
-    # use other embedding instead of openAI
     df = load_data("text_data.csv")
     text_chunks = chunk_dataset(df)
     # test a chunk

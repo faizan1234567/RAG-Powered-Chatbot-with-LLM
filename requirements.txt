@@ -12,3 +12,4 @@ sentence-transformers
 streamlit
 python-dotenv
 trafilatura
+langchain-openai
