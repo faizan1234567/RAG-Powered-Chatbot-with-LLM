@@ -75,6 +75,7 @@ def create_or_retreive_store(chunks: list):
     FAISS: vector store
     """
     embeddings = OpenAIEmbeddings()
+    # embeddings = HuggingFaceInstructEmbeddings() 
     if not os.path.exists("/db"):
         print('Creating embeddings')
         vectorstore = FAISS.from_documents(
