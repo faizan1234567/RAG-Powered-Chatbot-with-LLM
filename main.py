@@ -96,3 +96,4 @@ if __name__ == "__main__":
     # test a chunk
     # print(text_chunks[74])
     vectorstore = create_or_retreive_store(text_chunks)
+    print(type(vectorstore))
