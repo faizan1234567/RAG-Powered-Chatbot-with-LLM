@@ -91,6 +91,7 @@ def create_or_retreive_store(chunks: list):
 
 
 if __name__ == "__main__":
+    # use other embedding instead of openAI
     df = load_data("text_data.csv")
     text_chunks = chunk_dataset(df)
     # test a chunk
