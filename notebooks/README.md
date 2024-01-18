@@ -2,6 +2,7 @@
 In this project we utilize RAG to build question answering chatbot for SINES. In this file I am writing instructions to install the packages
 and how to run the code in the notebook. The overall project directory structure is shown below:
 
+
 RAG_chatbot_implementation
 ├── dataset
 │   ├── sines.pdf
@@ -9,6 +10,7 @@ RAG_chatbot_implementation
 ├── requirements.txt
 ├── README.md
 └── building_RAG_powered_chatbot_for_SINES_updated.ipynb 
+
 
 ## Installation
 If we are running the notebook locally, it is a good practice to create a virtual environment using anaconda or python venv.
@@ -49,4 +51,10 @@ In the google colab we need to open the notebook and enable Tesla T4 GPU.
 Then for installation we need to run
 ```bash
 !pip install -r requirments.txt
+```
+we can load the data files in content/ directory by uploading files in content (default). Or we can import google drive 
+and mount it and store files there.
+```python
+from google.colab import drive
+drive.mount('/gdrive')
 ```
