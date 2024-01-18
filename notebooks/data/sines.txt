@@ -1,0 +1,733 @@
+Welcome to SINES
+School of Interdisciplinary Engineering & Sciences is a top-notch research institute, one of its
+own kinds in the country; parented by National University of Science and Technology
+Islamabad. It was established in 2007 and is famous for its supercomputing facilities which
+provide its technical studies with cutting edge resources. SINES NUST’s supercomputer once
+made it to the list of top 500 supercomputers worldwide. Facilitated by the enabling environment
+the faculty and students at SINES developed a multi-disciplinary approach to research and
+education. The result oriented research by our faculty and students has made significant
+contributions in the socio-economic growth of the country.
+The education, training and research activities of SINES have been divided into two main
+streams, namely: Computational Sciences; and Computational Engineering.
+At SINES, students are encouraged and facilitated to involve themselves in specialized topics
+with faculty members who are on the forefront of innovation in their fields and the practitioners
+who bring real-world, real-time experience to the classroom. The SINES community is driven by
+a shared purpose: to make a better world through education, research, and innovation.
+
+Why SINES? – National University of Sciences and
+Technology (NUST)
+World’s Top Universities and Departments
+NUST is placed at number 400 in the QS World University Ranking 2019. Moreover, in the
+subject ranking, the university is placed at number 367 in Aeronautical Engineering and at
+number 273 in Computer Science and Information Systems. SINES improved scores in
+academic reputation, citations per faculty, faculty/student ratio has helped further consolidate its
+position this year.
+
+SUPERCOMPUTING RESEARCH AND EDUCATION CENTRE
+(SCREC)
+Supercomputing Research and Education Facility is a Centre of Excellence in HighPerformance Computing with a mission to support the research and development efforts at the
+National University of Sciences and Technology (NUST).
+
+Expert Faculty Members
+SINES takes pride in its faculty members that have completed their education from highly
+ranked universities worldwide. Their experience from these universities allows the school to
+
+offer current content being delivered by domain experts. We have unique faculty, a total of 19
+faculty members, including associate professors, assistant professors, RVFs and uniform faculty
+
+Finest learning environment
+At SINES, students are encouraged and facilitated to involve themselves in specialized topics
+with faculty members who are at the forefront of innovation in their fields and the practitioners
+who bring real-world, real-time experience to the classroom.
+
+Vision and Mission
+SINES: Vision
+To be known for interdisciplinary education and research in engineering and sciences,
+commitment to discovery and dissemination of knowledge, developing technical, managerial,
+interpersonal and communication skills and contributing in socio-economic growth of the country
+through innovative solution methodologies for problems in a variety of fields via modeling &
+simulation
+SINES: Mission
+To provide excellent interdisciplinary wholesome education and research opportunities of
+modeling & simulation in engineering and sciences to students from diverse background
+through competent faculty, adaptive mechanisms and enabling environment in collaboration
+with various constituencies of the society
+SINES : Core Values
+Integrity
+Innovation
+Teamwork
+
+History and Establishment
+The School of Interdisciplinary Engineering & Sciences (SINES) was established at NUST in
+2007 to set up modeling and simulation facilities for design and development in various
+disciplines through education, training and research. The center was founded to act as a
+platform to integrate design and development efforts by the government, academia and
+industry. Progress in this direction could only be made through cross-disciplinary research and
+educational programmes in collaboration with industry and government. Specifically, there was
+a need for integrating analytical and computational techniques with advances in computer
+hardware and software.
+SINES started its first MS programme in Computational Science and Engineering in Fall 2008,
+with specializations in “Fluid Flow and Structures” and “Computational Infrastructures and
+Visualisation”.
+In Fall, 2010, the programme was extended to PhD in Computational Science and Engineering.
+During the first four years, the educational and research programmes at SINES grew on the
+foundation of ten interrelated thrust areas, each focusing on mathematical modeling and
+
+simulation of a particular domain: structures; fluids; electrical systems; communication systems;
+computer and network architecture; operations research; and human behavior. In 2011,
+computational biology and drug design were added as new concentration areas both in MS and
+PhD.
+In 2012, a Centre of Excellence titled ‘Super Computing Research and Education Center
+(SCREC)’ was established at SINES. SCREC houses a supercomputing facility and is presently
+being utilized in computation-intensive research projects in the areas of fluid dynamics and
+biosciences.
+Recently, the education, training and research activities have been divided into two main
+streams or departments, namely: Sciences; and Engineering. These departments have been
+further divided into divisions to keep the activities focused, better managed as well as
+synergised. Sciences comprises Computer Science, Bioinformatics, and Computational &
+Applied Mathematics. Similarly, the Engineering division is divided into Engineering Sciences,
+Systems Engineering and Operations Research.
+
+Message from the Principal
+It is both an honor and privilege to warmly welcome you to the School of Interdisciplinary
+Engineering & Sciences (SINES). A university and thereby a country is defined by the research
+activities adapted by it which have the potential to bring changes to the nation. Considering the
+utmost importance of modern-day research, SINES was established in 2008 and has produced
+skilled graduates in interdisciplinary and diverse arenas.
+SINES is committed to excellence in academics in our classrooms and meaningful
+interdisciplinary research. Competent faculty and relevant equipped facilities are our key
+strengths making it one of the best research centers. We believe that the opportunity for higher
+education should be available to all who seek it, and we will continue to meet the ongoing
+challenges that higher education presents in the years ahead. Our students are provided with
+the academic tools, practical skills, and “real world” opportunities necessary to advance as
+leaders in their professions and their communities. I have a great belief in the capacity and
+potential of our students and the wider community to come together. We encourage active
+participation in an education that challenges critical thinking, provides career preparation, instills
+values, and inspires lifelong learning. We realize that each student is unique and, as a
+community, we strive to maximize that unique potential.
+This academic year, we will continue our many efforts to make the educational and research
+program ever stronger and more meaningful. It is indeed an exciting opportunity for you to join
+at this time as we are in the midst of a new regime that is driving the research center towards
+genuine high expectations and excellence which will permeate every aspect of SINES. We are
+reorganizing, growing, building new facilities, enhancing laboratories, and continuing to provide
+interdisciplinary education. I commend you for your interest in interdisciplinary education and
+research that address both diversity and teamwork. We look forward to having you join the
+SINES’ family.
+Dr Hammad M. Cheema, Principal SINES
+Principal SINES
+
+SDGs aligned Projects
+Adoption of a Performance Evaluation Technique for the Development of a Framework for the
+Climatic Responsive Urban Design (CRUD)
+PI: Dr Salma Sherbaz
+Research studies on urban microclimate are gaining popularity due to recent climate changes
+and rapid urbanization. Streets are the basic elements of a complex urban-built environment
+and are usually considered of simple rectangular shape, commonly known as the ‘‘urban
+canyon” (UC). The street orientation and geometry significantly affect wind and heat distribution
+inside an urban street canyon, affecting the building’s energy performance and natural and
+hybrid ventilation efficiencies. It also affects pedestrian comfort, pollutant dispersion, and overall
+air quality at the street level. So for climatologists and designers, the knowledge of flow
+characteristics in street canyons is an important consideration for Climate-responsive urban
+design. This research aims to guide the designer in the early-stage climate-responsive urban
+design. The project is aligned with the UN Sustainable Development Goals, SDG 11:
+Sustainable Cities and Communities and SDG 11: Climate Action.
+In-depth analysis of prediction and forecasting of sepsis in ICU patients using Deep Learning
+PI: Dr Mehak Rafiq
+Sepsis is a life-threatening reaction to an infection. Using AI to predict sepsis about 4-6hrs
+earlier than doctors. This project will help to avoid complications due to sepsis in ICU. Moreover,
+with the help of this project, we can extend good care in rural and unprivileged areas. Using
+machine learning models to evaluate heterogeneity in sepsis treatment patterns contained
+within granular data of electronic health records and to forecast sepsis using minimum features
+to help accurately predict the onset of sepsis a minimum of 4-6 hours earlier. The project is
+aligned with the UN Sustainable Development Goals, SDG 3: Ensure healthy lives and promote
+well-being for all at all ages
+1. Project Title: Virtual reality training simulation for critical multioperator vehicles
+Funding Agency: RDE (MoDP)
+Amounting Rs. 50.097 M
+Principal Investigator: Dr. Shahzad Rasool
+Duration: 15 Months (2022-2023)
+2. Project Title: Simulation of vehicle operator procedures in VR
+Funding Agency: RDE (MoDP)
+Amounting Rs. 2.0 M
+Principal Investigator: Dr. Shahzad Rasool
+Duration: 03 Months (2022)
+3. Project Title: Development of a virtual reality training and testing system for learning in
+complex domains
+Funding Agency: HEC
+
+Amounting Rs. 6.28 M
+Principal Investigator: Dr. Shahzad Rasool
+Duration: 36 Months (2022-2025)
+School of Interdisciplinary Engineering & Sciences
+4. Project Title: City-level vulnerability to COVID 19 pandemic: Spatio-temporal analysis of effect
+of land use and built
+environment on COVID 19 severity
+Funding Agency: NIH
+Amounting Rs. 0.6 M
+Principal Investigator: Dr. Salma Sherbaz
+Duration: 06 Months (2022)
+5. Project Title: Flight Sight Golf Launch Monitor
+Funding Agency: Al-Basirr Technologies
+Amounting Rs. 1.465 M
+Principal Investigator: Dr. Zartasha Mustansar
+Duration: 06 Months (2022)
+6. Project Title: Biomechanical Engineering of Post-Covid Bone health – The aftermath of
+Covid- based bone issues
+Funding Agency: HEC
+Amounting Rs. 5.387 M
+Principal Investigator: Dr. Zartasha Mustansar
+Duration: 24 Months (2022-2024)
+7. Project Title: Simulation of Chemical Reactions and Environmental Effects on the Block CoPolymer of HTPB TDI and
+MAPO
+Funding Agency: NESCOM
+Amounting Rs. 1.0256 M
+Principal Investigator: Dr. Fouzia Perveen Malik
+Duration: 12 Months (2022-2023)
+8. Project Title: NUST Shuttle Tracking Devices
+Funding Agency: NUST
+Amounting Rs. 0.700 M
+Principal Investigator: Dr. Hammad M. Cheema
+Duration: 06 Months (2022)
+9. Project Title: Portar: Development of a Portable radar for Tactical Defense,& Security
+Applications
+Funding Agency: HEC
+Amounting Rs. 18.356 M
+
+Principal Investigator: Dr. Hammad M. Cheema
+Duration: 36 Months (2022-2025)
+10. Project Title: Safe Rail Development of Obstacle Detection and Warning System using
+Microwave long range Radar for
+ML-1 Railway
+Funding Agency: HEC
+Amounting Rs. 58.170 M
+Principal Investigator: Dr. Hammad M. Cheema
+Duration: 36 Months (2022-2025)
+School of Interdisciplinary Engineering & Sciences
+11. Project Title: Development of Tracking Portal for Restoration of Habitats through Tree
+Plantation
+Funding Agency: Serena Hotels
+Amounting Rs. 1.87 M
+Principal Investigator: Dr. Muhammad Tariq Saeed
+Duration: 36 Months (2022-2023)
+12. Project Title: Gap Analysis on Industry 4.0
+Funding Agency: CottonWeb (Pvt) Ltd
+Amounting Rs. 1.6 M
+Principal Investigator: Dr. Hammad M. Cheema
+Duration: 04 Months (2022)
+13. Project Title: Commercial Scale Development of Indigenous Transmit-Receive Module for
+Airborne Radars
+Funding Agency: HEC
+Amounting Rs. 12.421 M
+Principal Investigator: Dr. Hammad M. Cheema
+Duration: 24 Months (2021-2023)
+14. Project Title: Simulation Model for Electro Optical Engagement – Phase-II
+Funding Agency: NESCOM
+Amounting Rs. 0.2 M
+Principal Investigator: Dr. Junaid Ahmad Khan
+Duration: 18 Months (2021-2023)
+15. Project Title: Integrated modeling of the cure process and the damage behavior of VFRP
+composites
+Funding Agency: BRAIA
+Amounting Rs. 48800 RMB
+Principal Investigator: Dr. Israr ud Din
+Duration: 12 Months (2021-2022)
+
+16. NUST-In-depth analysis & foreecastin of sepsis in ICU patients using deep learning-RCMS
+Funding Agency: XpertFlow
+Amounting Rs. 0.6 M
+Principal Investigator: Dr. Mehak Rafiq
+Duration: 06 Months (2021-2022)
+School of Interdisciplinary Engineering & Sciences
+17. NUST-Adoption of a performance evaluation technique for the development of a framework
+for the
+climate responsive urban design (CRUD)-RCMS
+Funding Agency: PIDE
+AmountingRs. 1.008 M
+Principal Investigator: Dr. Salma Sherbaz
+Duration: 12 Months (2021-2022)
+18. Project Title: Effect of forebody shaping on wing rock phenomena: Aerodynamics and Flight
+Stability Considerations
+Funding Agency: BRAIA
+Amounting Rs. 1.257 M
+Principal Investigator: Dr. Adnan Maqsood
+Duration: 12 Months (2020-2021)
+19. Project Title: Development of Generalized Tracks Association (GTA),Validation and
+Optimization System (VOS)-RCMS
+Funding Agency: PAF
+Amounting Rs. 4.979 M
+Principal Investigator: Dr. Mian Ilyas Ahmad
+Duration: 12 Months (2020-2021)
+20. Project Title: In-Silico Modeling and Analysis on Molybdenum Cofactor Deficiency in
+Humans
+Funding Agency: HEC
+Amounting Rs. 2.987 M
+Principal Investigator: Dr. Uzma Habib
+Duration: 23 Months (2019-2021)
+21. Project Title: Identificationa of Losses in a Gas Distribution Network through Reduced Order
+Modeling and Simulation
+Funding Agency: HEC
+Amounting Rs. 2.246 M
+Principal Investigator: Dr. Mian Ilyas Ahmad
+Duration: 24 Months (2019-2021)
+
+22. Project Title: Generation Longitudinal Flight Dynamic Stability Derivatives Using
+Computational Fluid Dynamics for JF17 Thunder Aircraft
+Funding Agency: HEC
+Amounting Rs. 5.25 M
+Principal Investigator: Dr. Adnan Maqsood
+Duration: 24 Months (2019-2021)
+23. Project Title: Understanding the role of iRhoms in EGFR Signiling Pathway and its Role in
+Breast and Colorectal Cancer
+School of Interdisciplinary Engineering & Sciences
+Funding Agency: HEC
+Amounting Rs. 1.504 M
+Principal Investigator: Dr. Mehak Rafiq
+Duration: 24 Months (2019-2021)
+24. Project Title: Development of GUI Integrated with Server-Based Backend Satellite Imagery
+Analysis Algorithms
+Funding Agency: PAF
+Amounting Rs. 3.17 M
+Principal Investigator: Dr. Muhammad Tariq Saeed
+Duration: 06 Months (2019)
+25. Project Title: Development of Geometrically accurate models (3D) of Human Brain for
+Calculation of Intra Cranial
+Pressure (ICP) due to presence of tumors Using Image Based Modeling and Finite
+Funding Agency: HEC
+Amounting Rs. 1.458 M
+Principal Investigator: Dr. Zartasha Mustansar
+Duration: 24 Months (2018-2020)
+26. Project Title: Data Analysis of Labour Management System
+Funding Agency: DrTech
+Amounting Rs. 1.14 M
+Principal Investigator: Dr. Mehak Rafiq
+Duration: 06 Months (2018-2019)
+27. Project Title: Design of Fins of Armour-Piercing Fin-Stabilized Discarding Sabot (APFSDS)
+with Enhanced Penetration
+Funding Agency: POF
+Amounting Rs. 0.23 M
+Principal Investigator: Dr. Adnan Maqsood
+Duration: 05 Months (2018-2019)
+28. Project Title: Flight Dynamic Analysis of Verstile Wing Morphing Techniques for UAVs /
+UCAVs
+
+Funding Agency: PAF
+Amounting Rs. 0.96 M
+Principal Investigator: Dr. Adnan Maqsood
+Duration: 12 Months (2018-2019)
+29. Project Title: Development of Surrogate Models for Flight Performance Estimation of FixedWing UAVs from Primitive
+Geometric Data
+Funding Agency: PAF
+Amounting Rs. 0.96 M
+Principal Investigator: Dr. Adnan Maqsood
+School of Interdisciplinary Engineering & Sciences
+Duration: 12 Months (2018-2019)
+30. Project Title: Aerodynamic and flight stability assessment of active flow control technology
+for Fifth Generation Fighter
+Aircraft
+Funding Agency: PAF
+Amounting Rs. 0.99 M
+Principal Investigator: Dr. Adnan Maqsood
+Duration: 12 Months (2018-2019)
+31. Project Title: Simulation Model for Electro Optical Engagement
+Funding Agency: NESCOM
+Amounting Rs. 0.3 M
+Principal Investigator: Dr. Junaid Ahmad Khan
+Duration: 12 Months (2018-2019)
+32. Project Title: Aerodynamic Analysis of competing conceptual designs for Fifth Generation
+Fighter Aircraft
+Funding Agency: PAF
+Amounting Rs. 1.65 M
+Principal Investigator: Dr. Adnan Maqsood
+Duration: 06 Months (2018)
+33. Project Title: Pharmacoinformatics Approaches to design Dual Inhibitors of Tyrosine Kinase
+Domain of IR and IGF-IR
+Funding Agency: HEC
+Amounting Rs. 1.227 M
+Principal Investigator: Dr. Ishrat Jabeen
+Duration: 30 Months (2017-2020)
+34. Project Title: Tangible Video Communication
+Funding Agency: HEC
+
+Amounting Rs. 0.361 M
+Principal Investigator: Dr. Shahzad Rasool
+Duration: 12 Months (2017-2018)
+35. Project Title: Body Area Network Channel Modeling for Communication b/w sensors &
+insulin pumps
+Funding Agency: HEC
+Amounting Rs. 0.473 M
+Principal Investigator: Dr. Sana Ajmal
+Duration: 09 Months (2017-2018)
+School of Interdisciplinary Engineering & Sciences
+36. Project Title: Design and Optimization of Diffuser for Horizontal Axis Diffuser Augmented
+Tidal Current Turbine
+Funding Agency: HEC
+Amounting Rs. 0.489 M
+Principal Investigator: Dr. Salma Sherbaz
+Duration: 12 Months (2017-2018)
+37. Project Title: Structural Evalution of Protein and Screeing of Novel Inhibitors for Ribolsomal
+S6 Kinase
+Funding Agency: HEC
+Amounting Rs. 0.3 M
+Principal Investigator: Dr. Rehan Zafar Paracha
+Duration: 18 Months (2017-2018)
+38. Project Title: Structural Controls of Urokinase-like Receptor & Rhomboids; Variations
+introduced by Boronic Acid Binding
+Funding Agency: HEC
+Amounting Rs. 0.24 M
+Principal Investigator: Dr. Mehak Rafiq
+Duration: 09 Months (2016)
+39. Project Title: Formal Analysis of the Impact of Feeding on Hepatocyte Circadian
+Funding Agency: HEC
+Amounting Rs. 0.93 M
+Principal Investigator: Dr. Jamil Ahmad
+Duration: 18 Months (2016-2017)
+40. Project Title: Analysis of Catamaran Hullform by CFD
+Funding Agency: HEC
+Amounting Rs. 0.196 M
+Principal Investigator: Dr. Salma Sherbaz
+Duration: 10 Months (2014-2015)
+
+41. Project Title: Design of the Energy-Efficient Ceiling Fans
+Funding Agency: HEC
+Amounting Rs. 0.498 M
+Principal Investigator: Dr. Adnan Maqsood
+Duration: 12 Months (2013-2014)
+42. Project Title: Lipophilic & Ligand Efficiency; Selectivity Profiles of Inhibitors of Transport
+Proteins
+Funding Agency: HEC
+Amounting Rs. 0.5 M
+Principal Investigator: Dr. Ishrat Jabeen
+School of Interdisciplinary Engineering & Sciences
+Duration: 12 Months (2012)
+43. Project Title: & Mgt. of MAL Structure in Malaria
+Funding Agency: HEC
+Amounting Rs. 2.54 M
+Principal Investigator: Dr. Umar Hassan Khan Niazi
+Duration: 24 Months (2010-2011)
+44. Project Title: External Flow Analysis of Trucks
+Funding Agency: HEC
+Amounting Rs. 0.48 M
+Principal Investigator: Dr. Khalid Pervez
+Duration: 18 Months (2010-2011)
+Recent Collaborations
+
+SINES FACULTY
+Dr. Hammad Cheema
+Department: Admin & Tech Staff
+Designation: Professor - Principal and Dean
+Contact number: 051-886-5700
+Email: principal@sines.nust.edu.pk
+Office Location: Ground Floor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Analog IC Design, RF IC Design, Radar Systems, TR Modules, RF
+Frontends, Chip design, Semiconductors, Internet of Things, Wearables, IOT
+
+Hammad M. Cheema is a Professor and dean of School of Interdisciplinary Engineering and
+Sciences (SINES) at the National University of Sciences and Technology (NUST), Islamabad,
+as well as principal investigator of the Radar Research Group. He graduated from NUST
+College of Electrical & Mechanical Engineering (CEME) in Electrical Engineering followed by
+master’s from Denmark, He received his Ph.D. in electrical engineering from Eindhoven
+University of Technology in the Netherlands and post-doc from KAUST, KSA. He is a senior
+member of IEEE. Dr. Hammad has a proven track record of academic leadership, excellence in
+teaching, interdisciplinary research, industrial engagement, licensing, and
+commercialization.
+
+Dr. Fouzia Malik
+Department: Department of Sciences
+Designation: Professor – HOD
+Contact number: 051-908-5574
+Email: fouzia@sines.nust.edu.pk
+Office Location: Ground Floor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Modeling Water Purification systems, 2D materials for energy storage
+Computational and Physical Chemistry, Quantum chemical Analysis, Gas capturing, Water
+Splitting, Smart Membranes for dual applications, Nanomaterials. Nano sensors, metal organic
+framework
+Dr. Fauzia Malik is a Professor of the School of Interdisciplinary Engineering and Sciences
+(SINES) at the National University of Sciences and Technology (NUST), Islamabad, as well as
+the HoD of Department of Sciences. She received her Ph.D. in Physical Chemistry from Quaide-Azam University with a sub-discipline in Computational Chemistry, her master’s discipline is
+also Physical Chemistry.
+
+Dr. Mian Ilyas Ahmad
+Department: Department of Engineering
+Designation: Professor – HOD
+Contact number: 051-886-5745
+Email: m.ilyas@sines.nust.edu.pk
+Office Location: Ground Floor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Model Order Reduction, control systems design, system analysis,
+numerical mathematics, system identification, scientific machine learning, numerical Linear
+Algebra, nonlinear Dynamics Tensor Computations, Energy Networks
+Dr. Mian Ilyas Ahmad is a Professor of School of Interdisciplinary Engineering and Sciences
+(SINES) at the National University of Sciences and Technology (NUST), Islamabad, as well as
+the HoD of Department of Engineering. He received his Ph.D. in Control Systems from Imperial
+College, London, with sub-discipline Electrical and Electronic Engineering.
+
+Dr. Zartasha Mustansar
+Department: Department of Engineering
+Designation: Associate Professor
+Contact number: 051-886-5743
+Email: zmustansar@sines.nust.edu.pk
+Office Location: Ground Floor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Biomechanics, Finite Elements, 3D Modeling, Image based modeling,
+Design thinking, motion capture(mocap), structure mechanics, system dynamics, mathematical
+modeling, modeling, and simulation
+Dr. Zartasha is a Professor and HoD of School of Interdisciplinary Engineering and Sciences
+(SINES) at the National University of Sciences and Technology (NUST), Islamabad. She
+received her Ph.D. in Physical Chemistry from University of Manchester, UK with sub-discipline
+in Image-based FEM and BM( Biomech). She is the Principal Investigator of Biomechanics as
+well as Makers Lab along with Dr. Hammad M. Cheema.
+
+Dr. Ammar Mushtaq
+Department: Department of Engineering
+Designation: Associate Professor
+Contact number: 051-9085-5736
+Email: ammar.mushtaq@sines.nust.edu.pk
+Office Location: Second Floor
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: CFD, Mathematical modeling, industrial flows simulation, nanofluids, nonNewtonian fluids, differential equations, turbulence, aerodynamics, design optimization,
+modeling and Simulation
+Dr. Zartasha is an Associate Professor and HoD of Research in School of Interdisciplinary
+Engineering and Sciences (SINES) at the National University of Sciences and Technology
+(NUST), Islamabad. He received his Ph.D. in CFD from National University of Science and
+Technology (NUST), Islamabad. he is the Co-PrincipalInvestigator of Computational
+Aeronautics Lab.
+
+Dr. Ishrat Jabeen
+Department: Department of Sciences
+Designation: Professor
+Contact number: 051-886-5732
+Email: Ishrat.jabeen@sines.nust.edu.pk
+Office Location: Fourth Floor
+Visiting Hours: Tuesday 10am - 12pm
+
+Research Keywords: Drug Design and development, structure bioinformatics, molecular
+dynamics simulations, ML in Biolocal Sciences, Biological Databases, Proteochemometrics
+modeling, personalized medicine, Biomolecular Structural Modeling, Docking Simulations, Local
+Healthcare data analytics
+Dr. Ishrat Jabeen is a Professor of School of Interdisciplinary Engineering and Sciences
+(SINES) at the National University of Sciences and Technology (NUST), Islamabad. She
+received her Ph.D. in Natural Sciences in Chemistry from University of Vienna, Vienna, Austria,
+with a sub-discipline in Parmaco Informatics, her master’s discipline is also Organic Chemistry.
+She is Principal Investigator of
+Computational Drug Design Lab.
+
+Dr. Tariq Saeed
+Department: Department of Engineering
+Designation: Associate Professor
+Contact number: 051-908-5573
+Email: tariq@sines.nust.edu.pk
+Office Location: Second Floor Wing D
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: High Performance Computing, Machine Learning, Deep Learning, Image
+Analysis, Data Analytics, AI, DevOps
+Dr. Tariq Saeed is an Associate Professor of School of Interdisciplinary Engineering and
+Sciences (SINES) at the National University of Sciences and Technology (NUST), Islamabad.
+He received his Ph.D. in Information Security from National University of Science and
+Technology (NUST), Islamabad. He is the Principal Investigator of Image Analysis Lab and
+Supercomputing Lab.
+
+Dr. Uzma Habib
+Department: Department of Sciences
+Designation: Associate Professor
+Contact number: 051-886-5735
+Email: uzma.habib@sines.nust.edu.pk
+Office Location: Fourth Floor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Computational Chemistry, Reaction Mechanism, DFT Studies, Inorganic
+Chemistry, Enzymology, Analytical Chemistry, Energy, MD Simulations, Molecular Docking,
+Coordination
+Complexes
+Dr. Uzma Habib is an Associate Professor of the School of Interdisciplinary Engineering and
+Sciences (SINES) at the National University of Sciences and Technology (NUST), Islamabad.
+She received her Ph.D. in Computational Chemistry from Heidelberg University, Germany, with
+a sub-discipline in Bioelectromagnetic, her master’s discipline is also Analytical Chemistry.
+
+Dr. Zamir Hussain
+Department: Department of Sciences
+Designation: Associate Professor
+Contact number: 051-908-5739
+Email: zamir@sines.nust.edu.pk
+Office Location: FourthFloor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Extreme value analysis, modeling climate variables, machine learning, AL
+in health informatics, Screening processes of mental and developmental disorders, smart
+screening of cancer, Autism Screening
+Dr. Zamir Hussain is an Associate Professor of School of Interdisciplinary Engineering and
+Sciences (SINES) at the National University of Sciences and Technology (NUST), Islamabad.
+He received his Ph.D. in Virology & Immunology from National University of Science and
+Technology (NUST), his MPhil discipline is Pharmaceutical Chemistry.
+
+Dr. Rehan Zafar Paracha
+Department: Department of Engineering
+Designation: Associate Professor
+Contact number: 051-908-5730
+Email: rehan@sines.nust.edu.pk
+Office Location: Fourth Floor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Next Generation Sequencing, Virology, Oncology, Biotherapeutics,
+chemical Sciences, Drug Design, automation, Microbiology, Immunology, Programming
+Dr. Rehan Zafar Paracha is an Associate Professor of School of Interdisciplinary Engineering
+and Sciences (SINES) at the National University of Sciences and Technology (NUST),
+Islamabad. He received his Ph.D. in Virology & Immunology from National University of Science
+and Technology (NUST), his MPhil discipline is Pharmaceutical Chemistry.
+
+Dr. Absaar Ul Jabbar
+Department: Department of Engineering
+Designation: Assistant Professor – DY Cont Exam
+Contact number: 051-908-5725
+Email: absaar@sines.nust.edu.pk
+Office Location: Fourth Floor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Fluid Mechanics, Computational Fluid Dynamics, Aerodynamics, Machine
+Learning, Transformers, Nonlinear Control Techniques, Biogydrogen Production, Process
+Simulation, Finite Element Methods, Multigrid Solvers.
+
+Dr. Absaar Ul Jabbar is an assistant Professor at School of Interdisciplinary Engineering and
+Sciences (SINES) at the National University of Sciences and Technology (NUST), Islamabad.
+He received his Ph.D. in Mechanical Engineering Technical University, Dortmund, Germany
+with sub-discipline CFD.
+
+Dr. Salma Sherbaz
+Department: Department of Engineering
+Designation: Assistant Professor
+Contact number: 051-908-5738
+Email: salmasherbaz@sines.nust.edu.pk
+Office Location: Fourth Floor Wing A
+Visiting Hours: Tuesday 10am - 12pm
+Research Keywords: Fluid Mechanics, CFD, Aerodynamics, Urban Flows, Urban Heat Island,
+Sports Aerodynamics, marine Renewable energy, greenship, Flow controlling techniques
+Dr. Salma Sherbaz is an assistant Professor at School of Interdisciplinary Engineering and
+Sciences (SINES) at the National University of Sciences and Technology (NUST), Islamabad.
+She received her Ph.D. in CFD from Harbin University of Engineering and Technology, China,
+her master’s discipline is also CFD.
+
+Dr. Shahzad Rasool
+Department: Department of Engineering
+Designation: Assistant Professor
+Contact number: 051-886-5737
+Email: shahzad.rasool@sines.nust.edu.pk
+Office Location: Third Floor Wing D
+Visiting Hours: Wednesday 12pm - 1pm
+Research Keywords: Haptic interactyion, virtual reality, augmented reality, human computer
+interaction, brain computer interfaces, computer graphics, serious games, training simulations,
+immersive interaction, intelligence virtual agents.
+Dr. Shahzad Rasool is an assistant Professor at School of Interdisciplinary Engineering and
+Sciences (SINES) at the National University of Sciences and Technology (NUST), Islamabad.
+He received his Ph.D. in Computer Engineering from Nanyang Technological University (NTU)
+Singapore, his master’s discipline is Communication Engineering. He is the Principal
+Investigator of XR Hive Lab.
+
+Dr. Mehak Rafiq
+Department: Department of Sciences
+Designation: Assistant Professor
+Contact number: 051-908-5733
+
+Email: mehak@sines.nust.edu.pk
+Office Location: Second Floor
+Visiting Hours: Wednesday 12pm - 1pm
+Research Keywords: Bioinformatics, Data Analytics, Data-Driven Healthcare, Big data
+engineering, Generative AI, Machine Learning, Genomics, Proteomics, personalized Medicine
+Research, Smart Solutions
+Dr. Mehak Rafiq is an assistant Professor at School of Interdisciplinary Engineering and
+Sciences (SINES) at the National University of Sciences and Technology (NUST), Islamabad.
+She received her Ph.D. in Translational Biology from Greenwich University, UK. She is the PI
+of Data Analytics Lab.
+
+Dr. Masood Ul Rehman Kayani
+Department: Department of Sciences
+Designation: Assistant Professor
+Contact number: 051-886-5744
+Email: m.kayani@sines.nust.edu.pk
+Office Location: Fourth Floor Wing A
+Visiting Hours: Wednesday 12pm - 1pm
+Research Keywords: Bioinformatics, Data Analytics, Data-Driven Healthcare, Big data
+engineering, Generative AI, Machine Learning, Genomics, Proteomics, personalized Medicine
+Research, Smart Solutions
+Dr. Masood Ul Rehman Kayani is an assistant professor at School of Interdisciplinary
+Engineering and Sciences (SINES) at the National University of Sciences and Technology
+(NUST), Islamabad. He received his Ph.D. in Bioinformatics Tsinghua University.
+
+LABS in SINES
+There are total 29 labs from 11 different schools that fall under following five themes
+1. Health and Well-being
+2. Energy and Environment
+3. Sensors and automation
+4. Materials and manufacturing
+5. Agriculture and food security
+
+Health and Well-Being:
+The following labs fall under this theme:
+1. Computational drug design belongs to SINES. Dr. Ishrat Jabeen is the principal
+investigator of this lab.
+
+2. Nano Biotechnology Lab belongs to SMME. Dr.Nosheen Fatima is the principal
+investigator of this lab.
+3. Deep Learning Lab belongs to SEECS. Dr. Faisal SHafait is the principal investigator of
+this lab.
+4. Biosensors and Therapeutics Lab belongs to ASAB. Dr. Shah Rukh Abbas is the
+principal investigator of this lab.
+5. Data Analytics Lab belongs to SINES. Dr.Mehak Rafiq is the principal investigator of this
+lab.
+6. Biomechanics Lab belongs to SINES. Dr. Zartasha Mustansar is the principal
+investigator of this lab.
+7. CureMD Research Lab belongs to CEME. Dr. Imran Akhtar is the PI of this lab.
+
+Energy and Environment:
+The following labs fall under this theme:
+1. Electric Vehicle Lab belongs to SEECS. Dr. Rana Iftikhar and Dr. Kamran Zeb is the
+Co-Principal investigator of this lab.
+2. Nanoscience and technology Lab belongs to SCME. Dr. Zeeshan and Dr. Mohsin are
+the Principal-Investigators of this lab.
+3. GIS Mobility Lab belongs to SCEE. Dr. Ali Tahir is the principal investigator of this lab.
+4. Advanced Integrated Energy Lab belongs to USPCAS-E. Dr. Abeera and Dr. Yusuf are
+the principal investigators of this lab.
+5. Image Analysis Lab belongs to SINES. Dr. Tariq Saeed is the principal investigator of
+this lab.
+6. Thermal Energy and Storage Lab belongs to SNS, USPCAS-E and SCME. Dr. Rizwan,
+Dr. Faheem, Dr. Ghulam, and Dr. Talha are the principal investigators of this lab.
+
+Sensors and Automation:
+The following labs fall under this theme:
+1. Aerial Robotics Lab belongs to SMME. Dr. Jawad Khan is the principal investigator of
+this lab.
+2. System-on-Chip (SoC) Lab belongs to SEECS. Dr.Muhammad Imran is the principal
+investigator of this lab.
+3. Radar Research Lab belongs to SINES and SEECS. Dr. Hammad M. Cheema, Dr. Abid
+Rafique, and Dr. Umar are the principal investigators of this lab.
+4. Defence Research and Innovation Lab belongs to DRD. Dr. Muhammad Saqib is the
+principal investigator of this lab.
+5. Computational Aeronautics Lab belongs to SINES. Dr. Adnan Maqsood, Dr. Ammar
+Mushtaq are the principal investigators of this lab.
+6. XR Hive Lab belongs to SINES. Dr. Shahzad Rasool is the principal investigator of this
+lab.
+
+7. Cyber Security Lab belongs to MCS. Dr. Haider Abbas is the principal investigator of this
+lab.
+8. Information Security Lab belongs to SEECS. Dr. Hasan Tahir is the principal investigator
+of this lab.
+9. Cyber Security Lab Lab belongs to MCS. Dr. Tariq Saeed and Engr. Muhammad Usman
+are the principal investigators of this lab.
+10. AIMS Lab belongs to SMME. Dr. Muhammad Sajid is the principal investigator of this
+lab.
+
+Material and Manufacturing:
+The following labs fall under this theme:
+1. Microfluidics Lab belongs to SMME. Dr. Emad Uddin is the principal investigator of this
+lab.
+2. Interdisciplinary Design Lab belongs to SADA. Dr. Jawad Zaidi is the principal
+investigator of this lab.
+3. Advanced Impact Lab belongs to SMME. Dr. Aamir Mubashar is the principal
+investigator of this lab.
+4. Makers Lab belongs to SINES. Dr. Zartasha Mustansar and Dr. Hammad M. Cheema
+are the principal investigators of this lab.
+
+Agriculture and Food Security:
+The following labs fall under this theme:
+5. Smart Agritech Lab belongs to SEECS. Dr. Shahzad Younis is the principal investigator
+of this lab.
+6. Environment and Agriculture Lab belongs to SCEE. Dr. Muhammad Arshad is the
+principal investigator of this lab.
+
+
