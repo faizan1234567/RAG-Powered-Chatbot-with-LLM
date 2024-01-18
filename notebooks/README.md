@@ -56,7 +56,7 @@ we can load the data files in ```content/``` directory by uploading files in con
 ```bash
 content
 ├── sines.pdf
-├── sines.text
+├── sines.txt
 ├── requirements.txt
 ├── README.md
 └── building_RAG_powered_chatbot_for_SINES_updated.ipynb 
