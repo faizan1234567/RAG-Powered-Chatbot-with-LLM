@@ -1,5 +1,5 @@
 # Developing a Chatbot for SINES using RAG
-In this project we utilize RAG to build question answering chatbot for SINES. In this file I am writing instructions to install the packages
+In this project we utilize ```RAG``` to build question answering chatbot for SINES. In this file I am writing instructions to install the packages
 and how to run the code in the notebook. The overall project directory structure is shown below:
 
 ```bash
@@ -13,7 +13,7 @@ and how to run the code in the notebook. The overall project directory structure
 ```
 
 ## Installation
-If we are running the notebook locally, it is a good practice to create a virtual environment using anaconda or python venv.
+If we are running the notebook locally, it is a good practice to create a ```virtual environment``` using anaconda or python venv.
 
 ```bash
 # create an virtual enviroment
@@ -45,16 +45,27 @@ jupyter notebook
 ```
 assuming we are at the root of the project folder. 
 
-## Google Colab usage
-In the google colab we need to open the notebook and enable Tesla T4 GPU.
+## Google Colab usage (recommended)
+In the ```google colab``` we need to open the notebook and enable ```Tesla T4 GPU```.
 
-Then for installation we need to run
+Then for installation we need to run in a cell
 ```bash
 !pip install -r requirments.txt
 ```
-we can load the data files in content/ directory by uploading files in content (default). Or we can import google drive 
-and mount it and store files there.
+we can load the data files in ```content/``` directory by uploading files in content (default).  So the tree structure should look like this:
+```bash
+content
+├── sines.pdf
+├── sines.text
+├── requirements.txt
+├── README.md
+└── building_RAG_powered_chatbot_for_SINES_updated.ipynb 
+```
+Or we can import google drive and mount it and store files there.
 ```python
 from google.colab import drive
 drive.mount('/gdrive')
 ```
+Please updated path to dataset files according to your directory structure. 
+
+Now we can run the notebook in the colab (it is recommended to run the notebook in colab to access free GPU)
