@@ -2,15 +2,15 @@
 In this project we utilize RAG to build question answering chatbot for SINES. In this file I am writing instructions to install the packages
 and how to run the code in the notebook. The overall project directory structure is shown below:
 
-
-RAG_chatbot_implementation
-├── dataset
-│   ├── sines.pdf
-│   └── sines.txt
-├── requirements.txt
-├── README.md
-└── building_RAG_powered_chatbot_for_SINES_updated.ipynb 
-
+```bash
+    RAG_chatbot_implementation
+    ├── dataset
+    │   ├── sines.pdf
+    │   └── sines.txt
+    ├── requirements.txt
+    ├── README.md
+    └── building_RAG_powered_chatbot_for_SINES_updated.ipynb 
+```
 
 ## Installation
 If we are running the notebook locally, it is a good practice to create a virtual environment using anaconda or python venv.
