@@ -71,14 +71,14 @@ def create_or_retreive_store(chunks: list):
 
     Return
     ------
-    FAISS: vector store
+    FAISS: vector store for storing vector embeddings
     """
     # embeddings = OpenAIEmbeddings()
     embeddings = HuggingFaceInstructEmbeddings() 
     if not os.path.exists("/db"):
         print('Creating embeddings')
         vectorstore = FAISS.from_documents(
-            chunks, embeddings
+            chunks,  
         )
         vectorstore.save_local("/db")
     else:
