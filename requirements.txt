@@ -1,10 +1,6 @@
-# requirements file
+
 # note which revision of python, for example 3.9.6
 # in this file, insert all the pip install needs, include revision
-
-#for example:
-#torch==2.0.1
-#matplotlib==3.7.2
 
 python-dotenv==1.0.0
 
@@ -27,3 +23,5 @@ tqdm==4.66.1
 
 datasets==2.15.0
 deepface==0.0.79
+
+hydra
