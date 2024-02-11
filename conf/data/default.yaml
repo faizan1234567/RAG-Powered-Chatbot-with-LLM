@@ -1,3 +1,4 @@
-pdf_file: ../../data/dataset/sines.pdf
-text_file: ../../data/dataset/sines.txt
+pdf_file: E:/rag_chatbot/RAG-Powered-Chatbot-with-LLM/dataset/sines.pdf
+text_file: E:/rag_chatbot/RAG-Powered-Chatbot-with-LLM/dataset/sines.txt
+
 

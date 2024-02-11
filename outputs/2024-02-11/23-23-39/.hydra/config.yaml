@@ -1,0 +1,5 @@
+data:
+  pdf_file: data/dataset/sines.pdf
+  text_file: data/dataset/sines.txt
+generator: {}
+reteriver: {}

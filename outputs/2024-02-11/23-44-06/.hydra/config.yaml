@@ -1,0 +1,5 @@
+data:
+  pdf_file: E:/rag_chatbot/RAG-Powered-Chatbot-with-LLM/dataset/sines.pdf
+  text_file: E:/rag_chatbot/RAG-Powered-Chatbot-with-LLM/dataset/sines.txt
+generator: {}
+reteriver: {}
