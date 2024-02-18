@@ -24,8 +24,8 @@ def load_text_file(file: str):
 # read text file 
 @hydra.main(config_name = "configs", config_path = 'conf', version_base= None)
 def get_data(cfg: DictConfig):
-    print(cfg)
     dataset = cfg.data.text_file
+    print()
     context = load_text_file(dataset)
     print(context[:200])
     
