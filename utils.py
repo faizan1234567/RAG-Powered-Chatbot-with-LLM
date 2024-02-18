@@ -72,13 +72,66 @@ def split_text(pdf_file: str, chunk_size: int = 500,
         context.append(page_content)
     return context
 
+def create_embeddings(text, model_name: str = "all-mpnet-base-v2"):
+    """
+    Load the sentence embedding from HuggingFace
 
+
+    Parameters
+    ----------
+    text: str
+    model_name: name of the encoder
+    """
+    model_loc = "sentence-transformers" + "/" + model_name
+    model = SentenceTransformer(model_loc)
+    embeddings = model.encode(text)
+    return embeddings
 
 
 #TODO: to create a vec database
-def create_vecdb(batch_size: int = 4, vec_limit: int = 100000,
-                 device: str = 'cuda'):
-    pass
+def create_vecdb(pdf_doc: str, chunk_size: int = 500, 
+                  chunk_overlap: int = 50, batch_size: int = 4,
+                vec_limit: int = 100000, device: str = 'cpu'):
+    
+    """
+    create vector database using pinecone with cosine similarity matirx and
+    768 embedding dimension
+
+    parameters
+    ----------
+    pdf_loc: dataset file
+    chunk_size: each splitted chunk size
+    chunk_overlap: chunk_overlap
+    batch_size: batches of docs to be encoded
+    vec_limited: number of vectors limit for pinecone vec database
+    device: by default cpu
+    """
+    
+    # update if cuda available
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+    # create list of chunked documents from the pdf file
+    context = split_text(pdf_file=pdf_doc, chunk_size= chunk_size, 
+                         chunk_overlap= chunk_overlap)
+    
+    # create vecdb index and use pinecone api key to upsert embeddings
+    # setup the index
+    utils = Utils()
+    PINECONE_API_KEY = utils.get_pinecone_api_key()
+    pc = Pinecone(api_key=PINECONE_API_KEY)
+    index = pc.Index("test-index")
+
+    for i in tqdm(range(0, len(context), batch_size)):
+        i_end = min(i+batch_size, len(context))
+        ids = [str(x) for x in range(i, i_end)]
+        metadatas = [{'text': text} for text in context[i:i_end]]
+        xc = create_embeddings(context[i:i_end])
+        records = zip(ids, xc, metadatas)
+        index.upsert(vectors=records)
+
+
+    
+    
 
 # read text file 
 @hydra.main(config_name = "configs", config_path = 'conf', version_base= None)
@@ -91,5 +144,11 @@ def get_data(cfg: DictConfig):
 
 
 if __name__ == "__main__":
-  get_data()
+  dataset_file = 'dataset/sines.pdf'
+  if os.path.exists(dataset_file):
+      context = split_text(dataset_file)
+      print(context[0])
+      print(f"Number of the elements: {len(context)}")
+  else:
+      print('INFO: the file does not exists')
    
