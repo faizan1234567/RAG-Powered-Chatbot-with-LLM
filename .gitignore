@@ -1,6 +1,7 @@
 RAG/
 papers/
 .vscode/
+outputs/
 
 *.pt
 *.pth
