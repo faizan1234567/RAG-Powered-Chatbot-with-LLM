@@ -72,7 +72,7 @@ def split_text(pdf_file: str, chunk_size: int = 500,
         context.append(page_content)
     return context
 
-def create_embeddings(text, model_name: str = "all-mpnet-base-v2"):
+def create_embeddings(text, model):
     """
     Load the sentence embedding from HuggingFace
 
@@ -82,16 +82,15 @@ def create_embeddings(text, model_name: str = "all-mpnet-base-v2"):
     text: str
     model_name: name of the encoder
     """
-    model_loc = "sentence-transformers" + "/" + model_name
-    model = SentenceTransformer(model_loc)
     embeddings = model.encode(text)
     return embeddings
 
 
 #TODO: to create a vec database
 def create_vecdb(pdf_doc: str, chunk_size: int = 500, 
-                  chunk_overlap: int = 50, batch_size: int = 4,
-                vec_limit: int = 100000, device: str = 'cpu'):
+                 chunk_overlap: int = 50, batch_size: int = 4,
+                 vec_limit: int = 100000, model_name= "all-mpnet-base-v2",
+                 device: str = 'cpu'):
     
     """
     create vector database using pinecone with cosine similarity matirx and
@@ -111,21 +110,29 @@ def create_vecdb(pdf_doc: str, chunk_size: int = 500,
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # create list of chunked documents from the pdf file
+    print('INFO: splitting text')
     context = split_text(pdf_file=pdf_doc, chunk_size= chunk_size, 
                          chunk_overlap= chunk_overlap)
     
     # create vecdb index and use pinecone api key to upsert embeddings
     # setup the index
+    print('setting Pinecone index')
     utils = Utils()
     PINECONE_API_KEY = utils.get_pinecone_api_key()
     pc = Pinecone(api_key=PINECONE_API_KEY)
     index = pc.Index("test-index")
 
+    # intialize embeddings model
+    print('Initializing embedding model')
+    model_loc = "sentence-transformers" + "/" + model_name
+    model = SentenceTransformer(model_loc)
+   
+    print('pushing to vectordatabase')
     for i in tqdm(range(0, len(context), batch_size)):
         i_end = min(i+batch_size, len(context))
         ids = [str(x) for x in range(i, i_end)]
         metadatas = [{'text': text} for text in context[i:i_end]]
-        xc = create_embeddings(context[i:i_end])
+        xc = create_embeddings(context[i:i_end], model)
         records = zip(ids, xc, metadatas)
         index.upsert(vectors=records)
 
@@ -144,11 +151,10 @@ def get_data(cfg: DictConfig):
 
 
 if __name__ == "__main__":
+  os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
   dataset_file = 'dataset/sines.pdf'
   if os.path.exists(dataset_file):
-      context = split_text(dataset_file)
-      print(context[0])
-      print(f"Number of the elements: {len(context)}")
+      create_vecdb('dataset/sines.pdf')
   else:
       print('INFO: the file does not exists')
    
