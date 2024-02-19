@@ -11,7 +11,7 @@ import time
 import warnings
 from tqdm.auto import tqdm
 # ignore warnings
-from utils import create_vecdb
+from utils import create_vecdb, run_query
 warnings.filterwarnings('ignore')
 
 import argparse
@@ -37,6 +37,7 @@ def read_args():
     parser.add_argument('--batch', type = int, default = 4, help = 'vecdb batch size')
     parser.add_argument('--device', default= 'cpu', type = str, help='cuda or cpu?')
     parser.add_argument('--pdf', type = str, default= "dataset/sines.pdf", help = 'context path')
+    parser.add_argument('--print_search', action= "store_true", help="show respone to a query")
     opt = parser.parse_args()
     return opt
 
@@ -56,7 +57,6 @@ def main(cfg: DictConfig):
     pc = Pinecone(api_key=PINECONE_API_KEY)
     index = pc.Index("test-index")
 
-
     # create vector database if doesn't exists already
     if args.vecdb:
         logger.info("Upserting document embedding to vector database")
@@ -64,3 +64,16 @@ def main(cfg: DictConfig):
                      model= model, chunk_overlap= cfg.reteriver.chunk_overlap,
                      chunk_size= cfg.reteriver.chunk_size)
         logger.info("Successfully created vector database")
+    
+    # semantic search
+    user_query = ""
+    results = run_query(query= user_query, index= index, 
+                       model = model)
+    if args.print_search:
+        for result in results['matches']:
+            print(f"{round(result['score'], 2)}: {result['metadata']['text']}")
+
+
+# run application
+if __name__ == "__main__":
+    main()

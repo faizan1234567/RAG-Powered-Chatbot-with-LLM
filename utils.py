@@ -86,16 +86,24 @@ def create_embeddings(text, model):
     return embeddings
 
 # encode query
-def run_query(query, model):
+def run_query(query, index, model):
+  """
+  run similarity search
+  ---------------------
+
+  parameter:
+  query: str a question posed by a user
+  index: name of the pincone index
+  model: an embedding model
+  """
   embedding = model.encode(query).tolist()
-  results = index.query(top_k=2, vector=embedding, include_metadata=True, include_values=False)
-  for result in results['matches']:
-    print(f"{round(result['score'], 2)}: {result['metadata']['text']}")
+  results = index.query(top_k=5, vector=embedding, include_metadata=True, include_values=False)
+  return results
 
 # vector database function
 def create_vecdb(pdf_doc: str, index, model, chunk_size: int = 500, 
                  chunk_overlap: int = 50, batch_size: int = 4,
-                 vec_limit: int = 100000, device: str = 'cpu'):
+                 device: str = 'cpu'):
     
     """
     create vector database using pinecone with cosine similarity matirx and
