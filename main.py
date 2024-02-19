@@ -46,7 +46,6 @@ def read_args():
 @hydra.main(config_name = "configs", config_path = 'conf', version_base= None)
 def main(cfg: DictConfig):
     args = read_args()
-    
     # initialize document embedding model for encoding query and documents
     logger.info('Loading Embedding model')
     model_name = cfg.embedding.model_name

@@ -2,3 +2,4 @@ defaults:
   - data: default
   - generator: default
   - reteriver: default
+  - embedding: default
