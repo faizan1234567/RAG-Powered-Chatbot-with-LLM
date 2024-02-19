@@ -138,10 +138,16 @@ def create_vecdb(pdf_doc: str, index, model, chunk_size: int = 500,
         index.upsert(vectors=records)
 
 if __name__ == "__main__":
-  os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+  model_name = "all-mpnet-base-v2"
+  model_destination = "sentence-transformers" + "/" + model_name
+  model = SentenceTransformer(model_destination)
+  utils = Utils()
+  PINECONE_API_KEY = utils.get_pinecone_api_key()
+  pc = Pinecone(api_key=PINECONE_API_KEY)
+  index = pc.Index("test-index")
   dataset_file = 'dataset/sines.pdf'
   if os.path.exists(dataset_file):
-      create_vecdb('dataset/sines.pdf')
+      create_vecdb('dataset/sines.pdf', index= index, model= model)
   else:
       print('INFO: the file does not exists')
    

@@ -10,7 +10,7 @@ import databases.DLAIUtils as du
 import time
 import warnings
 # ignore warnings
-from utils import create_vecdb, run_query
+from utils import create_vecdb, run_query, create_embeddings, split_text
 warnings.filterwarnings('ignore')
 
 import argparse
