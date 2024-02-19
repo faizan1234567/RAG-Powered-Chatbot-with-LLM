@@ -9,7 +9,6 @@ from sentence_transformers import SentenceTransformer
 import databases.DLAIUtils as du
 import time
 import warnings
-from tqdm.auto import tqdm
 # ignore warnings
 from utils import create_vecdb, run_query
 warnings.filterwarnings('ignore')
@@ -20,15 +19,6 @@ import logging
 # setup logger
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-
-file_handler = logging.FileHandler(filename= "logs/logger.log")
-stream_handler = logging.StreamHandler()
-formatter = logging.Formatter(fmt= "%(asctime)s: %(message)s", datefmt= '%Y-%m-%d %H:%M:%S')
-file_handler.setFormatter(formatter)
-stream_handler.setFormatter(formatter)
-
-logger.addHandler(file_handler)
-logger.addHandler(stream_handler)
 
 # read command line arguments
 def read_args():
@@ -43,9 +33,11 @@ def read_args():
     opt = parser.parse_args()
     return opt
 
+# currently supporting semantic search 
+# TODO: ingest context to LLM prompt (RAG)
 @hydra.main(config_name = "configs", config_path = 'conf', version_base= None)
 def main(cfg: DictConfig):
-    args = read_args()
+    # args = read_args()
     # initialize document embedding model for encoding query and documents
     logger.info('Loading Embedding model')
     model_name = cfg.embedding.model_name
@@ -59,19 +51,19 @@ def main(cfg: DictConfig):
     index = pc.Index("test-index")
 
     # create vector database if doesn't exists already
-    if args.vecdb:
+    if cfg.reteriver.vecdb:
         logger.info("Upserting document embedding to vector database")
-        create_vecdb(pdf_doc= cfg.data.pdf_file, index= index, 
+        create_vecdb(pdf_doc= cfg.data.pdf, index= index, 
                      model= model, chunk_overlap= cfg.reteriver.chunk_overlap,
                      chunk_size= cfg.reteriver.chunk_size)
         logger.info("Successfully created vector database")
     
     # semantic search
-    user_query = ""
+    user_query = "Who is the principal of SINES?"
     results = run_query(query= user_query, index= index, 
                        model = model)
     # show similar results
-    if args.print_search:
+    if cfg.reteriver.print_search:
         for result in results['matches']:
             print(f"{round(result['score'], 2)}: {result['metadata']['text']}")
 

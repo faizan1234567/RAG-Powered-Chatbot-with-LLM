@@ -1,2 +1,13 @@
 2024-02-19 22:42:16: Loading Embedding model
 2024-02-19 22:48:37: Loading Embedding model
+2024-02-19 22:52:06: Loading Embedding model
+2024-02-19 22:52:14: Setting PineCone vector database for document embedding
+2024-02-19 23:22:11: Loading Embedding model
+2024-02-19 23:22:18: Setting PineCone vector database for document embedding
+2024-02-19 23:23:35: Loading Embedding model
+2024-02-19 23:23:39: Setting PineCone vector database for document embedding
+2024-02-19 23:23:40: Upserting document embedding to vector database
+2024-02-19 23:27:13: Loading Embedding model
+2024-02-19 23:27:18: Setting PineCone vector database for document embedding
+2024-02-19 23:27:18: Upserting document embedding to vector database
+2024-02-19 23:27:50: Successfully created vector database

@@ -1,4 +1,4 @@
-pdf_file: dataset/sines.pdf
-text_file: dataset/sines.txt
+pdf: dataset/sines.pdf
+text: dataset/sines.txt
 
 
