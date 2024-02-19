@@ -3,7 +3,7 @@ import hydra
 from omegaconf import OmegaConf, DictConfig
 from databases.DLAIUtils import Utils
 import torch
-from pinecone import Pinecone, ServerlessSpec
+from pinecone import Pinecone
 from datasets import load_dataset
 from sentence_transformers import SentenceTransformer
 import databases.DLAIUtils as du
@@ -17,6 +17,7 @@ warnings.filterwarnings('ignore')
 import argparse
 import logging
 
+# setup logger
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
@@ -29,6 +30,7 @@ stream_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
 
+# read command line arguments
 def read_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--chunk_size', default= 500, type = int, help= "document chunk size")
@@ -69,6 +71,7 @@ def main(cfg: DictConfig):
     user_query = ""
     results = run_query(query= user_query, index= index, 
                        model = model)
+    # show similar results
     if args.print_search:
         for result in results['matches']:
             print(f"{round(result['score'], 2)}: {result['metadata']['text']}")
