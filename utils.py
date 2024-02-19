@@ -85,12 +85,17 @@ def create_embeddings(text, model):
     embeddings = model.encode(text)
     return embeddings
 
+# encode query
+def run_query(query, model):
+  embedding = model.encode(query).tolist()
+  results = index.query(top_k=2, vector=embedding, include_metadata=True, include_values=False)
+  for result in results['matches']:
+    print(f"{round(result['score'], 2)}: {result['metadata']['text']}")
 
-#TODO: to create a vec database
-def create_vecdb(pdf_doc: str, chunk_size: int = 500, 
+# vector database function
+def create_vecdb(pdf_doc: str, index, model, chunk_size: int = 500, 
                  chunk_overlap: int = 50, batch_size: int = 4,
-                 vec_limit: int = 100000, model_name= "all-mpnet-base-v2",
-                 device: str = 'cpu'):
+                 vec_limit: int = 100000, device: str = 'cpu'):
     
     """
     create vector database using pinecone with cosine similarity matirx and
@@ -99,6 +104,8 @@ def create_vecdb(pdf_doc: str, chunk_size: int = 500,
     parameters
     ----------
     pdf_loc: dataset file
+    index: pinecone index to store vector encodings
+    model: embedding model
     chunk_size: each splitted chunk size
     chunk_overlap: chunk_overlap
     batch_size: batches of docs to be encoded
@@ -114,20 +121,6 @@ def create_vecdb(pdf_doc: str, chunk_size: int = 500,
     context = split_text(pdf_file=pdf_doc, chunk_size= chunk_size, 
                          chunk_overlap= chunk_overlap)
     
-    # create vecdb index and use pinecone api key to upsert embeddings
-    # setup the index
-    print('setting Pinecone index')
-    utils = Utils()
-    PINECONE_API_KEY = utils.get_pinecone_api_key()
-    pc = Pinecone(api_key=PINECONE_API_KEY)
-    index = pc.Index("test-index")
-
-    # intialize embeddings model
-    print('Initializing embedding model')
-    model_loc = "sentence-transformers" + "/" + model_name
-    model = SentenceTransformer(model_loc)
-   
-    print('pushing to vectordatabase')
     for i in tqdm(range(0, len(context), batch_size)):
         i_end = min(i+batch_size, len(context))
         ids = [str(x) for x in range(i, i_end)]
@@ -135,20 +128,6 @@ def create_vecdb(pdf_doc: str, chunk_size: int = 500,
         xc = create_embeddings(context[i:i_end], model)
         records = zip(ids, xc, metadatas)
         index.upsert(vectors=records)
-
-
-    
-    
-
-# read text file 
-@hydra.main(config_name = "configs", config_path = 'conf', version_base= None)
-def get_data(cfg: DictConfig):
-    dataset = cfg.data.text_file
-    print()
-    context = load_text_file(dataset)
-    print(context[:200])
-    
-
 
 if __name__ == "__main__":
   os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'

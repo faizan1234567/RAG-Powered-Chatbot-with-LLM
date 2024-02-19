@@ -1,99 +1,66 @@
-import pandas as pd
 import os
-from langchain_community.document_loaders import DataFrameLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import OpenAIEmbeddings, SelfHostedHuggingFaceEmbeddings, HuggingFaceInstructEmbeddings
-from dotenv import load_dotenv
-#initailize
-load_dotenv()
+import hydra
+from omegaconf import OmegaConf, DictConfig
+from databases.DLAIUtils import Utils
+import torch
+from pinecone import Pinecone, ServerlessSpec
+from datasets import load_dataset
+from sentence_transformers import SentenceTransformer
+import databases.DLAIUtils as du
+import time
+import warnings
+from tqdm.auto import tqdm
+# ignore warnings
+from utils import create_vecdb
+warnings.filterwarnings('ignore')
 
-def load_data(file_name: str = "text_data.csv"):
-    """
-    convert the csv into pandas data frame format
+import argparse
+import logging
 
-    Parameters
-    ----------
-    file_name: str
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
-    Return
-    ------
-    df: pd.DataFrmae
-    """
-    data_root = 'data/'
-    file_path = os.path.join(data_root, file_name)
-    df = pd.read_csv(file_path)
-    return df
+file_handler = logging.FileHandler(filename= "logs/logger.log")
+stream_handler = logging.StreamHandler()
+formatter = logging.Formatter(fmt= "%(asctime)s: %(message)s", datefmt= '%Y-%m-%d %H:%M:%S')
+file_handler.setFormatter(formatter)
+stream_handler.setFormatter(formatter)
 
+logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
 
-def chunk_dataset(dataset: pd.DataFrame, chunk_size: int = 1000, chunk_overlap: int = 0):
-    """
-    divide the dataset into chunk of documents due to limited context window size of
-    an LLM by using langchain functions. 
+def read_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--chunk_size', default= 500, type = int, help= "document chunk size")
+    parser.add_argument('--chunk_overlap', default= 50, type = int, help= 'document overlap')
+    parser.add_argument('--vecdb', action= "store_true", help= "flag to create vector database")
+    parser.add_argument('--batch', type = int, default = 4, help = 'vecdb batch size')
+    parser.add_argument('--device', default= 'cpu', type = str, help='cuda or cpu?')
+    parser.add_argument('--pdf', type = str, default= "dataset/sines.pdf", help = 'context path')
+    opt = parser.parse_args()
+    return opt
 
-    Parameters
-    ----------
-    dataset: a dataframe containing information
-    chunk_size: number of elements in each chunk
-    chunk_overlap: chunk overlap size
-
-    Return
-    ------
-    list: list of chunks
-    """
-    chunks = DataFrameLoader(
-           dataset, page_content_column= "body"
-    ).load_and_split(text_splitter = 
-                     RecursiveCharacterTextSplitter(chunk_size = chunk_size, 
-                                                    chunk_overlap = chunk_overlap,
-                                                    length_function = len), 
-                     )
+@hydra.main(config_name = "configs", config_path = 'conf', version_base= None)
+def main(cfg: DictConfig):
+    args = read_args()
     
-    # for each chunk retreive important info
-    for doc in chunks:
-        title = doc.metadata["title"]
-        description = doc.metadata["description"]
-        content = doc.page_content
-        url = doc.metadata["url"]
-        updated_content = f"TITLE: {title}\DESCRIPTION: {description}\BODY: {content}\nURL: {url}"
-        doc.page_content = updated_content
-    return chunks
+    # initialize document embedding model for encoding query and documents
+    logger.info('Loading Embedding model')
+    model_name = cfg.embedding.model_name
+    model_destination = "sentence-transformers" + "/" + model_name
+    model = SentenceTransformer(model_destination)
     
-
-def create_or_retreive_store(chunks: list):
-    """
-    create a embeddings and store them using FAISS
-    create an embedding of each document chunk
-
-    Parameters
-    ----------
-    chunks: list of docs chunks
-
-    Return
-    ------
-    FAISS: vector store for storing vector embeddings
-    """
-    # embeddings = OpenAIEmbeddings()
-    embeddings = HuggingFaceInstructEmbeddings() 
-    if not os.path.exists("/db"):
-        print('Creating embeddings')
-        vectorstore = FAISS.from_documents(
-            chunks,  
-        )
-        vectorstore.save_local("/db")
-    else:
-        print("Loading DB")
-        vectorstore = FAISS.load_local("/db", embeddings)
-    return vectorstore
+    logger.info('Setting PineCone vector database for document embedding')
+    utils = Utils()
+    PINECONE_API_KEY = utils.get_pinecone_api_key()
+    pc = Pinecone(api_key=PINECONE_API_KEY)
+    index = pc.Index("test-index")
 
 
-
-
-
-if __name__ == "__main__":
-    df = load_data("text_data.csv")
-    text_chunks = chunk_dataset(df)
-    # test a chunk
-    # print(text_chunks[74])
-    vectorstore = create_or_retreive_store(text_chunks)
-    print(type(vectorstore))
+    # create vector database if doesn't exists already
+    if args.vecdb:
+        logger.info("Upserting document embedding to vector database")
+        create_vecdb(pdf_doc= cfg.data.pdf_file, index= index, 
+                     model= model, chunk_overlap= cfg.reteriver.chunk_overlap,
+                     chunk_size= cfg.reteriver.chunk_size)
+        logger.info("Successfully created vector database")
