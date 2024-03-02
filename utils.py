@@ -137,6 +137,7 @@ def create_vecdb(pdf_doc: str, index, model, chunk_size: int = 500,
         records = zip(ids, xc, metadatas)
         index.upsert(vectors=records)
 
+# test utils 
 if __name__ == "__main__":
   model_name = "all-mpnet-base-v2"
   model_destination = "sentence-transformers" + "/" + model_name

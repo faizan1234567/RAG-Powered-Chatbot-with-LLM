@@ -37,7 +37,7 @@ def read_args():
 # TODO: ingest context to LLM prompt (RAG)
 @hydra.main(config_name = "configs", config_path = 'conf', version_base= None)
 def main(cfg: DictConfig):
-    # args = read_args()
+    
     # initialize document embedding model for encoding query and documents
     logger.info('Loading Embedding model')
     model_name = cfg.embedding.model_name
@@ -63,6 +63,7 @@ def main(cfg: DictConfig):
     results = run_query(query= user_query, index= index, 
                        model = model)
     # show similar results
+    print()
     if cfg.reteriver.print_search:
         for result in results['matches']:
             print(f"{round(result['score'], 2)}: {result['metadata']['text']}")
