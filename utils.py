@@ -137,6 +137,33 @@ def create_vecdb(pdf_doc: str, index, model, chunk_size: int = 500,
         records = zip(ids, xc, metadatas)
         index.upsert(vectors=records)
 
+def create_prompt(contexts, query):
+    '''
+    create a prompt for LLM to answer using the context reterived from the reteriver
+    and the quesetion posed by a user
+
+    parameters
+    ----------
+    contexts: list
+    query: str
+    '''
+    prompt_start = (
+    "Answer the question based on the context below.\n\n"+
+    "Context:\n")
+
+    prompt_end = (
+        f"\n\nQuestion: {query}\nAnswer:")
+
+    prompt = (
+        prompt_start + "\n\n---\n\n".join(contexts) + 
+        prompt_end
+    )
+
+    return prompt
+
+
+
+
 # test utils 
 if __name__ == "__main__":
   model_name = "all-mpnet-base-v2"

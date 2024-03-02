@@ -10,7 +10,7 @@ import databases.DLAIUtils as du
 import time
 import warnings
 # ignore warnings
-from utils import create_vecdb, run_query, create_embeddings, split_text
+from utils import create_vecdb, run_query, create_embeddings, split_text, create_prompt
 warnings.filterwarnings('ignore')
 
 import argparse
@@ -63,7 +63,8 @@ def main(cfg: DictConfig):
     results = run_query(query= user_query, index= index, 
                        model = model)
     # show similar results
-    print()
+    contexts = [res['metadata']['text']  for res in results['matches']]
+    print(create_prompt(contexts=contexts, query= user_query))
     if cfg.reteriver.print_search:
         for result in results['matches']:
             print(f"{round(result['score'], 2)}: {result['metadata']['text']}")
