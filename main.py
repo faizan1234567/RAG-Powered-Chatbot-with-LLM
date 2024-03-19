@@ -66,6 +66,7 @@ def main(cfg: DictConfig):
     contexts = [res['metadata']['text']  for res in results['matches']]
     print(create_prompt(contexts=contexts, query= user_query))
     if cfg.reteriver.print_search:
+        print()
         for result in results['matches']:
             print(f"{round(result['score'], 2)}: {result['metadata']['text']}")
 
